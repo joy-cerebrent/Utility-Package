@@ -1,0 +1,33 @@
+{
+  "name": "utility-package",
+  "version": "1.0.0",
+  "description": "A collection of utility functions and components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joy-cerebrent/Utility-Package.git"
+  },
+  "keywords": [
+    "utility"
+  ],
+  "author": "Joy Brar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joy-cerebrent/Utility-Package/issues"
+  },
+  "homepage": "https://github.com/joy-cerebrent/Utility-Package#readme",
+  "dependencies": {
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "react": "^19.0.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.3"
+  }
+}
