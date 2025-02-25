@@ -1,4 +1,4 @@
-import { AllowedFileType } from "../types";
+import { AllowedFileType } from "../types/FileUploader.types";
 import { Dispatch, SetStateAction } from "react";
 import { isFileTypeAllowed } from "../utils";
 

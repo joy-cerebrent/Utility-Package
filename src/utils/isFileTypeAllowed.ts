@@ -1,6 +1,9 @@
-import { AllowedFileType } from "../types";
+import { AllowedFileType } from "../types/FileUploader.types";
 
-export const isFileTypeAllowed = (file: File, allowedFiles: AllowedFileType[]): boolean => {
+export const isFileTypeAllowed = (
+  file: File,
+  allowedFiles: AllowedFileType[]
+): boolean => {
   if (allowedFiles.includes("any")) return true;
 
   const fileTypeMap: Record<AllowedFileType, RegExp> = {
