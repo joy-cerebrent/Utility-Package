@@ -9,7 +9,7 @@ import "../styles/index.css";
 
 const prioritizeTailwind = (className: string) => className.split(" ").map(word => `!${word}`).join(" ");
 
-export default function FileUploader({
+export const FileUploader = ({
   maxFiles = 5,
   maxSize = 4,
   allowedFiles = ["any"],
@@ -25,7 +25,7 @@ export default function FileUploader({
   loadingClassName,
   deleteButtonClassName,
   closePreviewButtonClassName,
-}: FileUploaderProps) {
+}: FileUploaderProps) => {
   const [files, setFiles] = useState<File[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [previewFile, setPreviewFile] = useState<File | null>(null);

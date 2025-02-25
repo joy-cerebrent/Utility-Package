@@ -30,7 +30,7 @@ export const validateCell = (
       return false;
     }
 
-    if (column.regex && value && !column.regex.test(value.toString())) {
+    if (column.regex && (column.regex instanceof RegExp) && value && !column.regex.test(value.toString())) {
       // alert(`Error: Invalid value in column "${column.title}"`);
       cell.style.backgroundColor = "#FF000066";
       return false;
