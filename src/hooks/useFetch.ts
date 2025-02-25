@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { UseFetchParams, UseFetchReturn } from "../types/useFetchTypes";
+import { UseFetchParams, UseFetchReturn } from "../types/useFetchTypes.types";
 import { buildQueryString, generateCacheKey } from "../utils";
 
 const cache: Record<string, any> = {};
