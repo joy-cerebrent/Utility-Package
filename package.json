@@ -2,7 +2,30 @@
   "name": "utility-package",
   "version": "1.0.0",
   "description": "A collection of utility functions and components",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./components": {
+      "default": "./dist/components/index.js",
+      "types": "./dist/components/index.d.ts"
+    },
+    "./form": {
+      "default": "./dist/form/index.js",
+      "types": "./dist/form/index.d.ts"
+    },
+    "./hooks": {
+      "default": "./dist/hooks/index.js",
+      "types": "./dist/hooks/index.d.ts"
+    },
+    "./providers": {
+      "default": "./dist/providers/index.js",
+      "types": "./dist/providers/index.d.ts"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run clean && tsc && npm run copy-files",
@@ -24,8 +47,12 @@
   "homepage": "https://github.com/joy-cerebrent/Utility-Package#readme",
   "dependencies": {
     "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
     "jspreadsheet-ce": "^4.15.0",
+    "lucide-react": "^0.476.0",
+    "react-day-picker": "^9.5.1",
     "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
     "socket.io-client": "^4.8.1",
     "tailwind-merge": "^3.0.2"
   },
