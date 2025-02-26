@@ -17,6 +17,10 @@
       "default": "./dist/form/index.js",
       "types": "./dist/form/index.d.ts"
     },
+    "./graphs": {
+      "default": "./dist/graphs/index.js",
+      "types": "./dist/graphs/index.d.ts"
+    },
     "./hooks": {
       "default": "./dist/hooks/index.js",
       "types": "./dist/hooks/index.d.ts"
@@ -53,6 +57,7 @@
     "react-day-picker": "^9.5.1",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.54.2",
+    "recharts": "^2.15.1",
     "socket.io-client": "^4.8.1",
     "tailwind-merge": "^3.0.2"
   },
