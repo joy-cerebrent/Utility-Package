@@ -31,6 +31,7 @@ export type DropdownProps = {
   label: string;
   options: string[];
   value: string;
+  disabled?: boolean;
   leftIcon?: LucideIcon;
   enableSearch?: boolean;
   error?: string;
