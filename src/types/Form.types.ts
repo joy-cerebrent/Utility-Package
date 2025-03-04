@@ -29,13 +29,17 @@ export type DatePickerProps = {
 
 export type DropdownProps = {
   label: string;
-  options: string[];
+  options: string[] | {
+    label?: string;
+    options: string[];
+  }[];
   value: string;
   disabled?: boolean;
   leftIcon?: LucideIcon;
   enableSearch?: boolean;
   error?: string;
   onChange: (value: string) => void;
+  customDisplayFunction?: (option: string) => string;
 };
 
 export type ProgressBarProps = {
